@@ -1,0 +1,30 @@
+Sistema de preenchimento do formulário
+Para iniciar o servidor é necessário utilizar o xampp ou apenas digitar no prompt de comando o 
+    php -S localhost:9090(porta) -t 'pasta do projeto'
+Tendo em mente que o PHP está configurado como variável de ambiente no S.O.:
+
+    Lista de pastas do sistema:
+        - Classes: contém arquivos de edição de imagens, horários e outras validações;
+        - CSS: Contém Arquivos de estilos (Estão incompatíveis em determinados navegadores)
+        - Docs: Contém arquivos dos modelos utilizados para o preenchimento do formulário,
+         arquivos RTF (não deve ser executado normalmente por estar com o código fonte alterado)
+         arquivos RTF*.PHP: alteram o conteúdo do documento de acordo com a necessidade
+            -Img: As imagens são salvas e após esse processo é salvo uma cópia da imagem convertida
+            se necessário utilizar a função ImageDestroy()
+        -JS: Contém arquivos que fazem o controle e validação dos dados do formulário, como o 
+		controle da semana, dos arquivos para exportar, das quantidades de atividades, ...
+        -Plugin: Plugin utilizado para janelas flutuantes interativas.
+        
+O sistema não foi finalizado.
+As funções de alterações dos documentos de Convenio de Concessão de Estagio (1-CCE), Termo de 
+Compromisso (2-TCE) e do Plano de atividade (3-PAE) foram finalizados sem revisão.
+
+Os campos não são obrigatórios, pois, de acordo com empresas não conveniadas são gerados mais 
+campos que não foram tratados.
+Datas sem validação.
+
+
+Necessário revisão da classe de geração de imagens, em que atualmente funciona com arquivos do 
+tipo jpg e o caminho especificado deverá ser alterado.
+
+Mensalmente será enviado uma nova alteração do sistema.

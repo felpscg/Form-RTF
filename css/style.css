@@ -1,0 +1,353 @@
+
+/*
+    Author  : FELIPECORREAGOMES
+*/
+
+@import url(font.css);
+@import url(menu.css);
+#form p{
+    text-indent:0em;
+    margin-left: 2px;
+}
+
+p,.p{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 1em;
+    text-indent: 3em;
+    text-align: justify;
+
+}
+
+
+p{
+    text-align: justify;
+
+}
+dt, dd, dl{
+
+    padding-bottom: 3px;
+}
+
+body{
+    font-family:comfortaa, abz, arial, sans-serif, verdana;
+    padding: 0em;
+    margin: 0em;
+    color:#0D0D0D;
+    background-color:#ccc;
+    /*background-color:transparent;*/
+    font-weight: normal;
+    width:1300px;
+    line-height: 1.5em;
+}
+legend{
+
+    color: #000;
+}
+fieldset{
+             border: solid 1px #000;
+             margin-bottom: 20px;
+             border-radius: 10px;
+}
+
+noscript{
+    font-family:comfortaa, abz, arial, sans-serif, verdana;
+    color: #492c2c;
+    font-size: 1.5em;
+}
+:link,a:visited{
+    color: #64a2ac;
+}
+a:hover{
+    color: #878c8d;
+}
+
+dd{
+    text-indent: 0em;
+    margin-left: 1em;
+}
+
+h1,h2,h3,h4{
+    /*font-family:verdana,arial,sans-serif;*/
+    margin:10px 0;
+    font-weight: 400;
+}
+h1{
+    font-size: 1.5em;
+    
+}
+h2{
+    font-size: 1.2em;
+}
+
+#formbs{
+    background-color:#fff;
+    margin:0;
+}
+
+
+.fs{
+    
+    border:0px solid #000;
+    
+
+}
+
+
+form, #normas, #telIni{
+    position: relative;
+    left: 8%;
+    background-color:#fff;
+    width:80%;
+    border:1px solid #fff;
+    margin: 20px;
+
+}
+input{
+    padding:10px;
+    display:block;
+    border:2px  #ccc ;
+    border-style: solid;
+    width:35%;
+    background-color: #eee;
+   
+}
+
+#rangsem{
+    position: relative;
+    left: 0%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding: 5px;
+}
+.ad{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    padding: 10px;
+}
+#rang1{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    padding: 10px;
+}
+#rang2{
+    position: absolute;
+    top:0%;
+    left: 25%;
+    padding: 10px;
+}
+.slider{
+    width: 100px;
+}
+.innum{
+    max-width: 10%;
+}
+
+#more-atv{
+    position: relative;
+    left: 50%;
+    margin-left: -20px;
+    display:block;
+    width: 40px;
+    height: 40px;
+
+/*border: #000 1px solid; */
+}
+#less-atv{
+    position: relative;
+    left: 50%;
+    margin-left: -20px;
+    display:block;
+    width: 40px;
+    height: 40px;
+
+/*border: #000 1px solid; */
+}
+.bloco-atv{
+    padding: 9px ;
+    position: relative;
+    vertical-align: 10px ;
+    top:-10px;
+    margin-top: 0px ;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 40px;
+    max-width: 20%;
+    display:inline;
+}
+.b-a{
+    position: relative;
+    top:20px;
+}
+.sp-jb{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    display:  inline-block;
+    
+    
+}
+.sp-rb{
+    position: relative;
+    right: 10%;
+    text-align: right;
+    display:  block;
+    
+}
+
+#tb-atv{
+    padding: 10px !important;
+    
+    vertical-align: 1px !important;
+    margin-top: 0px ;
+    
+    max-width: 100%;
+    display:inline-table ;
+}
+.atv-c{
+    position: relative;
+    left: 50%;
+    margin-left: -30%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    
+    display:block;
+    width: 60%;
+    height: 40px;
+    text-indent:-9000em;
+    overflow:hidden;
+}
+#more-atv:hover{
+    opacity:0.9;
+    -moz-opacity: 0.9;
+    filter: alpha(opacity=90);
+    z-index: 999;
+}
+.atv-c:hover{
+    background-color: #ccc;
+    cursor: pointer;
+
+}
+
+
+.seta-raf{
+    position: relative;
+    top: -40px;
+    padding-bottom: -80px;
+    align-content: baseline;
+    display:block;
+    height:40px;
+    width:40px;
+    text-indent:-9000em;
+    overflow:hidden;
+    background-color: #fff !important;
+    background:url(../img/icon/seta-raf-40.png) no-repeat 0 0;
+}
+.seta-raf:hover, .seta:hover{
+    background-color: #ddd !important;
+    transition:all 0.2s ease;
+    background:url(../img/icon/seta-raf-b-b-40.png) no-repeat 0 0 !important;
+}
+.p-sp-in{
+    font-size: 1.2em;
+    left: 10%;
+    max-width: 90%;
+}
+
+.sp-in{
+
+    width: 405px;
+    height: 150px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+
+}
+span.s{
+    position: relative;
+    display: block;
+    border: none;
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+.seta{
+    margin-left: 40%;
+    display:block;
+    height:40px;
+    width:40px;
+    text-indent:-9000em;
+    overflow:hidden;
+    background:url(../img/icon/seta-40.png) no-repeat 0 0 !important;
+
+
+}
+
+#p-form{
+    font-size: 1.2em;
+}
+
+#btreset{
+    display:block;
+    width:100%;
+    height:32px;
+    text-indent:-9000em;
+    overflow:hidden;
+    background:url(../img/lform.png) no-repeat 0 0;
+}
+input[type="number"] {
+    width: 100px;
+    max-width: 10%;
+}
+input[type="date"] {
+    width: 200px;
+    max-width: 13%;
+}
+input[type="time"] {
+    width: 70px;
+    max-width: 10%;
+}
+input[type="radio"] {
+    width: 17px;
+    padding:0px ;
+    display:inline;
+    border:2px #000 ;
+    background: url(../img/icon/check.png)  no-repeat 0 0; 
+}
+textArea{
+    
+    padding:20px;
+    display:block;
+    border:2px solid #ccc ;
+    min-width: 29%;
+    width:30%;
+    height: 60px;
+    background-color: #eee;
+    
+}
+/*
+input:disabled{
+    background: transparent;
+}*/
+.classif{
+    position: relative;
+    top: 5px;
+    alignment-baseline:  middle;
+    
+}
+.rcla{
+    position: relative;
+    top: 5px;
+    padding: 3px;
+    
+}
+.rclao{
+    position: relative;
+    left:10px;
+    
+}

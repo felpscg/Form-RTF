@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta content="Felipe Correa Gomes" name="author"/>
+    <meta charset="utf-8"/>
+
+    <title>Formulario Estágio</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="plugin/reveal/reveal.css"/>
+    <script  charset="utf-8" src="js/addatv.js" defer="defer"></script>
+    <script src="plugin/reveal/jquery-1.4.4.min.js" defer="defer"></script>
+    <script src="plugin/reveal/jquery.reveal.js" defer="defer"></script>
+  </head>
+  <body>
+      <form enctype="multipart/form-data" method="POST" name="formbasic" id="formp" action="docs/testeatv.php">
+    <fieldset>
+        <legend><u>
+            Plano de atividades
+
+            </u></legend>
+        <a id="more">
+            <div class="atv-c"><img id="more-atv" src="img/icon/more-40.png"/></div>
+        </a>
+        <p ><span class="sp-jb">Nº </span><span class="sp-jb"  style="margin-left: 5% !important;"> Descrição da atividade</span> <span class="sp-jb" style="margin-left: 9% !important;">Objetivo ou resultado esperado</span><span class="sp-jb" style="margin-left: 7% !important;">Período previsto </span><span class="sp-rb">(data: início e término)</span></p>
+
+        <p>
+            <input name="atval1"  type="hidden" value=1 />
+            <span class="bloco-atv" >1</span>
+            <textarea name="descatval1" class="bloco-atv b-a" placeholder="Descreva sobre as atividades"></textarea>
+            <input name="nomeatval1" class="bloco-atv" maxlength="100" size="65"  type="text"/>
+            <input name="dtiniatval1" type="date"/>
+            <input name="dtfimatval1" class="bloco-atv" type="date"/>
+        </p>
+        <span id="prox"></span>
+        
+        <a id="less">
+            <div class="atv-c"><img id="less-atv" src="img/icon/less-40.png"/></div>
+        </a>
+
+    </fieldset>
+          
+    
+        <a href="#"   data-reveal-id="janelaModal"><img src="img/epdf.png" /></a>
+        <button type="reset" id="btreset" name="btreset"></button>
+        <div id="janelaModal" class="reveal-modal">
+            <h1>Exportar ...</h1>
+            <br>
+            Cidade local dos documentos:<br>
+            
+            <p>selecione o documento para exportar</p>
+            <button type="submit" id="pae" name="btsubpdf" >PAE</button>
+            <a class="close-reveal-modal">x</a>
+        </div>
+    </form>
+</body>
+</html>

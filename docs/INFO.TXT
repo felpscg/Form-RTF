@@ -1,0 +1,4 @@
+Arquivos rtf*.php alteram as variaveis dos documentos pelos valores do formulário
+	- img contém as imagens salvas de cada documento gerado
+	- modelo geral dos documentos para download 
+	- MS-O modelos para alteração para arquivos RTF compativeis com o MS - Office

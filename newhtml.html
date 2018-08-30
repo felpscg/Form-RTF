@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta content="Felipe Correa Gomes" name="author"/>
+    <meta charset="utf-8"/>
+
+    <title>Formulario Estágio</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="plugin/reveal/reveal.css"/>
+
+    <script charset="utf-8" src="js/versem.js" defer="defer"></script>
+    <script charset="utf-8" src="js/selbtrtf.js" defer="defer"></script>
+    <script charset="utf-8" src="js/cep.js" defer="defer"></script>
+    <script charset="utf-8" src="js/cepemp.js" defer="defer"></script>
+    <script charset="utf-8" src="js/classestagio.js" defer="defer"></script>
+    <script charset="utf-8" src="js/addatv.js" defer="defer"></script>
+
+
+
+    <script src="plugin/reveal/jquery-1.4.4.min.js" defer="defer"></script>
+    <script src="plugin/reveal/jquery.reveal.js" defer="defer"></script>
+    <?php
+    //require_once('');
+    ?>
+
+  </head>
+  <body id="form">
+  <?php ?>
+    <ul id="menu" >
+        <li class="m-p logo"><img class='logo-p' src="img/fatec-logo-basico-b.png" alt="Fateurinhos"/></li>
+        <li class="m-p" ><a href="index.php">Inicio</a></li>
+        <li class="m-p ativo"><a href="form.php">Formulário</a></li>
+        <li class="m-p"><a href="#">Modelos</a></li>
+        <li class="m-p"><a href="normas.php">Normas</a></li>
+
+        <li class="m-p dropdown">
+            <a href="" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </li>
+    </ul>
+
+
+      
+      
+    <form enctype="multipart/form-data" method="POST" name="formbasic" id="formp" action="docs/teste.php">
+        
+
+        <fieldset>
+        <legend>Curso</legend>
+
+
+            <p>
+                Nome do curso - Turno:&nbsp;&nbsp;&nbsp;
+                <select name="cursoturno" size="1" >
+                    <option value="" disabled="disabled" selected="selected">Selecione a sua opção</option>
+                    <optgroup label="Turno - Matutino">
+                        <option value="agrm">
+                            Agronegócio
+                        </option>
+                        <option value="jogosm">
+                            Jogos
+                        </option>
+                        <option value="segm">
+                            Segurança
+                        </option>
+                    </optgroup>
+                    <optgroup label="Turno - Vespertino">
+                        <option value="adsv">
+                             ADS
+                        </option>
+
+                    </optgroup>
+                    <optgroup label="Turno - Noturno">
+                        <option value="adsn">
+                            ADS
+                        </option>
+                        <option value="agrn">
+                            Agronegócio
+                        </option>
+
+                        <option value="segn">
+                            Segurança
+                        </option>
+
+                        </optgroup>
+                </select>
+        	<!--<input  maxlength="100" size="65" name="name" type="text">-->
+
+        	</p>
+
+        <p>
+            Semestre:&nbsp;&nbsp;&nbsp;
+    	<select id="semestre" name="semestre">
+    	    <option value=0 disabled="disabled" selected="selected">--</option>
+            <option value=1>1º</option>
+            <option value=2>2º</option>
+            <option value=3>3º</option>
+            <option value=4>4º</option>
+            <option value=5>5º</option>
+            <option value=6>6º</option>
+        </select>
+
+    	</p>
+
+        </fieldset>
+            
+        
+        
+            
+            <div  class="classif">
+              <!--se o semestre for maior que 4 ele é obrigatório-->
+                Classificação:?&nbsp;&nbsp;&nbsp;
+                <div class="rcla"><input  name="classifica" type="radio" id="estobg" value="obr" disabled="disabled"/><span class="rclao">Obrigatório</span></div>
+                <div class="rcla"><input name="classifica" type="radio" id="estnobg" value="nobr" checked="checked"/><span class="rclao">Não obrigatório</span></div>
+            </div>
+
+
+            <p>              <!--Dentro do inicio e fim do estágio-->
+                Data de início:?&nbsp;&nbsp;&nbsp;
+        	<input  type="date" name="datainivig" min="2018-01-02"/>
+
+        	</p>
+
+            <p>
+                Data de témino:?&nbsp;&nbsp;&nbsp;
+        	<input  type="date" name="datafimvig" min="2018-01-02"/>
+            <!--Pegar data no server(PHP)-->
+            <!--Aplicar regra (JS)-->
+
+        	</p>
+
+            <p>
+                Data de término do contrato:?&nbsp;&nbsp;&nbsp;
+        	<input  type="date" name="datafimcont" min="2018-01-02"/>
+            <!--Pegar data no server(PHP)-->
+            <!--Aplicar regra (JS)-->
+
+        	</p>
+
+                <div id="rangsem">
+                <p class="ad">
+                Dias da semana:&nbsp; <span id="adp"></span>
+                </p>
+                <div id="rang1"><input type="range" min="1"  max="6" value="3" class="slider"  id="valRangeSI"/>
+                <span id="returnSI"></span>
+                <span id="ad"></span>
+                </div>
+
+                <div id="rang2">
+                <input type="range" min="1"  max="6" value="2" class="slider"  id="valRangeSF"/>
+                <span id="returnSF"></span>
+                </div></div>
+
+            <button type="submit" >CCE</button>
+            
+    </form>
+</body>
+</html>

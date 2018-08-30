@@ -1,0 +1,2 @@
+Documentos base para inserir o nome das variaveis para alterar
+Pasta model contém os documentos alterados
