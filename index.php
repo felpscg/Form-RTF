@@ -25,11 +25,13 @@ $obg ->ativoMenu(0);
 
 
     <div id="telIni">
-        
+        <!--
 
         <p>As regras para preenchimento e entrega dos documentos seguem em <a href="docs/modelosdocs/normas_de_estagio.zip">anexo</a> ou se desejar, acesse o menu regras</p>
         <p>Após a exportação dos documentos, devem ser verificados e revisados para prevenir erros na entrega final. Para que não ocorram erros mais comuns, os seguintes itens devem estar em ordem:</p>
-        <ul class="p">
+        
+		-->
+		<ul class="p">
             <li>Quantidade de cópias
                 <dl>
                     <dd>02 &nbsp;- CCE (Convênio de Concessao de Estágio)</dd>
